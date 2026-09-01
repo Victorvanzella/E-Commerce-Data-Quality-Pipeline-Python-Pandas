@@ -1,4 +1,4 @@
-# E-Commerce Data Quality Pipeline
+# Sales-Analytics-Data-App
 
 Projeto de portfólio focado em **Engenharia de Dados Júnior**, desenvolvido a partir do problema de negócio proposto no Mini-Projeto 4 do curso *Fundamentos de Linguagem Python - Do Básico a Aplicações de IA*, da Data Science Academy.
 
