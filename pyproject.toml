@@ -1,0 +1,19 @@
+[project]
+name = "ecommerce-data-quality-pipeline"
+version = "1.0.0"
+description = "Pipeline de qualidade de dados para transacoes de e-commerce."
+requires-python = ">=3.11,<3.13"
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers --disable-warnings"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+

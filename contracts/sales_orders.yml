@@ -1,0 +1,51 @@
+version: "1.0"
+dataset: sales_orders
+description: Contrato de dados para pedidos transacionais de e-commerce.
+primary_key: order_id
+
+required_columns:
+  - order_id
+  - order_date
+  - customer_id
+  - product_id
+  - product_name
+  - category
+  - quantity
+  - unit_price
+  - discount_pct
+  - payment_method
+  - delivery_status
+  - country
+  - total_amount
+
+domains:
+  category:
+    - Electronics
+    - Home
+    - Sports
+    - Books
+    - Beauty
+  payment_method:
+    - Card
+    - Pix
+    - Boleto
+    - Wallet
+  delivery_status:
+    - Delivered
+    - Shipped
+    - Processing
+    - Cancelled
+  country:
+    - Brazil
+    - Argentina
+    - Chile
+    - Colombia
+
+thresholds:
+  quantity_min: 1
+  quantity_max: 100
+  unit_price_min_exclusive: 0
+  discount_min: 0
+  discount_max: 0.5
+  total_amount_tolerance: 0.02
+
